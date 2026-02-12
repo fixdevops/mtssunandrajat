@@ -67,7 +67,7 @@ export default function ProfilPage() {
                   <IdentityItem label="Desa" value="Geger" />
                   <IdentityItem label="Kecamatan" value="Kedungadem" />
                   <IdentityItem label="Kabupaten" value="Bojonegoro" />
-                  <IdentityItem label="Kepala Sekolah" value="Ahmad Rifa'i" />
+                  <IdentityItem label="Operator" value="Ahmad Rifa'i" />
                   <IdentityItem label="Email" value="-" />
                 </div>
               </div>

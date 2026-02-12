@@ -3,8 +3,8 @@ import Navbar from '@/components/Navbar22';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Kontak Kami - SMA Negeri 1 Yogyakarta',
-  description: 'Hubungi SMA Negeri 1 Yogyakarta untuk informasi lebih lanjut.',
+  title: 'MTs Sunan Drajat',
+  description: 'Hubungi Operator MTs Sunan Drajat untuk informasi lebih lanjut.',
 };
 
 export default function ContactPage() {
@@ -39,7 +39,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-900 mb-1">Alamat</h4>
-                    <p className="text-gray-600">Jl. HOS Cokroaminoto No. 10, Pakuncen, Wirobrajan, Yogyakarta 55253</p>
+                    <p className="text-gray-600">Geger, Kedungadem, Bojonegoro, Jawa Timur 62195</p>
                   </div>
                 </div>
 
@@ -49,7 +49,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-900 mb-1">Telepon</h4>
-                    <p className="text-gray-600">(0274) 512268</p>
+                    <p className="text-gray-600">085236556057</p>
                   </div>
                 </div>
 
@@ -59,8 +59,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-900 mb-1">Email</h4>
-                    <p className="text-gray-600">sman1yogya@yahoo.com</p>
-                    <p className="text-gray-600">info@sman1yogya.sch.id</p>
+                    <p className="text-gray-600">mts.sunandrajat89@gmail.com</p>
                   </div>
                 </div>
 
@@ -70,8 +69,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-900 mb-1">Jam Operasional</h4>
-                    <p className="text-gray-600">Senin - Kamis: 07.00 - 15.30 WIB</p>
-                    <p className="text-gray-600">Jumat: 07.00 - 14.30 WIB</p>
+                    <p className="text-gray-600">Sabtu - Kamis: 07.00 - 13.30 WIB</p>
                   </div>
                 </div>
               </div>
@@ -79,7 +77,7 @@ export default function ContactPage() {
               {/* Map */}
               <div className="mt-8 rounded-lg overflow-hidden shadow-md h-64 border border-gray-200">
                 <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.973462334862!2d110.3541623147775!3d-7.792455994384351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a57863584852f%3A0x10f69da46927a4d2!2sSMA%20Negeri%201%20Yogyakarta!5e0!3m2!1sid!2sid!4v1678249652156!5m2!1sid!2sid" 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.475417597945!2d111.99435607483925!3d-7.300361792707333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e782f4fff7f9c9d%3A0x17cc31596bcc1193!2sMTs%20Swasta%20Sunan%20Drajat!5e0!3m2!1sid!2sid!4v1770910842281!5m2!1sid!2sid" 
                   width="100%" 
                   height="100%" 
                   style={{ border: 0 }} 

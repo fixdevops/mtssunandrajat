@@ -33,7 +33,7 @@ export default function SambutanPage() {
                   />
                 </div>
                 <div className="mt-6 text-center">
-                  <h3 className="font-bold text-2xl text-gray-900">Ustad.Taufiq</h3>
+                  <h3 className="font-bold text-2xl text-gray-900">Ida Aulia Rahmawati, S.Pd </h3>
                   <p className="text-primary font-medium uppercase tracking-wider text-sm mt-1">Kepala Madrasah</p>
                   <div className="h-1 w-12 bg-primary mx-auto mt-4 rounded-full"></div>
                 </div>
@@ -78,7 +78,7 @@ export default function SambutanPage() {
                   
                   <div className="mt-10 p-6 bg-primary/5 rounded-xl border-l-4 border-primary">
                     <p className="font-semibold text-gray-800">Sambutan Kepala Madrasah</p>
-                    <p className="font-bold text-xl text-primary mt-1">Ustad.Taufiq</p>
+                    <p className="font-bold text-xl text-primary mt-1">Ida Aulia Rahmawati, S.Pd</p>
                   </div>
                 </div>
               </div>

@@ -1,4 +1,4 @@
-import Navbar from '@/components/Navbar';
+import Navbar from '@/components/Navbar22';
 import HeroSection from '@/components/HeroSection';
 import ProfilPage from '@/components/ProfilPage';
 import AchievementSection from '@/components/AchievementSection';

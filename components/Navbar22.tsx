@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown, Menu, X, Globe } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -10,6 +11,8 @@ import { cn } from '@/lib/utils';
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
+  const isHomePage = pathname === '/';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,8 +27,12 @@ export default function Navbar() {
     <nav
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        // py-3 & py-4 membuat navbar lebih tipis sehingga logo otomatis lebih ke atas
-        isScrolled ? "bg-[#1BB32B] shadow-md py-3" : "bg-[#1BB32B] shadow-md py-3"
+        // Logic: Jika di Homepage & belum discroll -> Transparan
+        // Jika di Homepage & sudah discroll -> Hijau
+        // Jika BUKAN di Homepage -> Selalu Hijau
+        (isHomePage && !isScrolled) 
+          ? "bg-transparent py-4" 
+          : "bg-[#1BB32B] shadow-md py-3"
       )}
     >
       {/* px-2 agar lebih mepet ke samping kiri layar */}
@@ -94,14 +101,14 @@ export default function Navbar() {
               isScrolled={isScrolled}
               items={[
                 { label: 'Rapor Digital (RDM)', href: 'https://mtssunandrajat.rdm9.my.id/' },
-                { label: 'Ekstrakurikuler', href: '#ekstrakurikuler' },
+                { label: 'Ekstrakurikuler', href: '/ekstrakurikuler' },
                 { label: 'Laboratorium', href: '/laboratorium' },
                 { label: 'Perpustakaan', href: '/perpustakaan' },
               ]}
             />
-            <NavLink href="#prestasi" isScrolled={isScrolled}>Prestasi</NavLink>
-            <NavLink href="#alumni" isScrolled={isScrolled}>Alumni</NavLink>
-            <NavLink href="#contact" isScrolled={isScrolled}>Kontak</NavLink>
+            <NavLink href="/prestasi" isScrolled={isScrolled}>Prestasi</NavLink>
+            <NavLink href="/alumni" isScrolled={isScrolled}>Alumni</NavLink>
+            <NavLink href="/contact" isScrolled={isScrolled}>Kontak</NavLink>
             
             <div className={cn("ml-4 flex items-center space-x-1 px-3 py-1.5 rounded-full border transition-all", isScrolled ? "border-white/20 text-white bg-white/10" : "border-white/20 text-white bg-white/10")}>
               <Globe size={14} />
@@ -139,9 +146,9 @@ export default function Navbar() {
                     { label: 'Galeri', href: '/galery' },
                     ]} />
                     
-                    <Link href="#prestasi" className="block px-2 py-3 text-gray-700 font-medium hover:bg-gray-50 rounded-lg">Prestasi</Link>
-                    <Link href="#alumni" className="block px-2 py-3 text-gray-700 font-medium hover:bg-gray-50 rounded-lg">Alumni</Link>
-                    <Link href="#contact" className="block px-2 py-3 text-gray-700 font-medium hover:bg-gray-50 rounded-lg">Kontak</Link>
+                    <Link href="/prestasi" className="block px-2 py-3 text-gray-700 font-medium hover:bg-gray-50 rounded-lg">Prestasi</Link>
+                    <Link href="/alumni" className="block px-2 py-3 text-gray-700 font-medium hover:bg-gray-50 rounded-lg">Alumni</Link>
+                    <Link href="/contact" className="block px-2 py-3 text-gray-700 font-medium hover:bg-gray-50 rounded-lg">Kontak</Link>
                 </div>
             </motion.div>
             )}
