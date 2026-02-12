@@ -3,10 +3,13 @@ import Navbar from '@/components/Navbar22';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function NewsDetailPage({ params }: { params: { id: string } }) {
+export default async function NewsDetailPage(props: { params: Promise<{ id: string }> }) {
+  const params = await props.params;
+
   // Mock data fetching based on ID
   const news = {
     id: params.id,
+
     title: 'DI HARI PAHLAWAN, SMAN 1 YOGYAKARTA LANTIK PENGURUS OSIS',
     image: 'https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=1200&q=80',
     date: '10 Nov, 2025',

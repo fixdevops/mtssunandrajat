@@ -2,6 +2,8 @@
 
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
+
 import { ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 
@@ -82,12 +84,13 @@ export default function AlumniSection() {
             >
               <div className="flex items-center gap-4 mb-6">
                 <div className="relative w-16 h-16 shrink-0 overflow-hidden rounded-2xl shadow-md border-2 border-gray-50">
-                  <img
+                  <Image
                     src={item.image}
                     alt={item.name}
-                    className="w-full h-full object-cover"
-                    loading="lazy"
+                    fill
+                    className="object-cover"
                   />
+
                 </div>
                 <div className="overflow-hidden text-left">
                   <h4 className="font-bold text-[15px] text-gray-900 truncate leading-tight">{item.name}</h4>

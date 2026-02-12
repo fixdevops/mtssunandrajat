@@ -2,6 +2,8 @@
 
 import Navbar from '@/components/Navbar22';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
+
 
 const alumni = [
   {
@@ -38,11 +40,14 @@ export default function AlumniPage() {
       {/* --- HERO SECTION DENGAN GRADASI --- */}
       <section className="relative h-[380px] flex items-center justify-center mt-16 overflow-hidden">
         {/* Background Image */}
-        <img 
+        <Image 
           src="https://i.pinimg.com/736x/8b/6e/82/8b6e828469e3a6c5674c3e809f6e3c0b.jpg"
           alt="Banner"
-          className="absolute inset-0 w-full h-full object-cover"
+          fill
+          className="object-cover"
+          priority
         />
+
         {/* Gradasi yang lebih halus: Dari Biru Tua ke Biru Sedang */}
         <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/80 to-primary/60 backdrop-blur-[1px]"></div>
         
@@ -81,13 +86,15 @@ export default function AlumniPage() {
             >
               <div>
                 <div className="flex items-center gap-4 mb-8">
-                  <div className="w-14 h-14 rounded-xl overflow-hidden shadow-inner bg-gray-100">
-                    <img
+                  <div className="relative w-14 h-14 rounded-xl overflow-hidden shadow-inner bg-gray-100">
+                    <Image
                       src={item.image}
                       alt={item.name}
-                      className="w-full h-full object-cover"
+                      fill
+                      className="object-cover"
                     />
                   </div>
+
                   <div>
                     <h4 className="font-bold text-gray-900 text-[15px]">{item.name}</h4>
                     <p className="text-primary text-[10px] font-bold uppercase tracking-widest">{item.role}</p>
@@ -96,7 +103,8 @@ export default function AlumniPage() {
 
                 <div className="relative px-2">
                   <p className="text-gray-600 text-sm leading-relaxed italic">
-                    "{item.quote}"
+                    &quot;{item.quote}&quot;
+
                   </p>
                 </div>
               </div>

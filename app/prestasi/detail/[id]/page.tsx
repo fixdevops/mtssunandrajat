@@ -3,10 +3,13 @@ import Navbar from '@/components/Navbar22';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function PrestasiDetailPage({ params }: { params: { id: string } }) {
+export default async function PrestasiDetailPage(props: { params: Promise<{ id: string }> }) {
+  const params = await props.params;
+
   // Mock data
   const achievement = {
     id: params.id,
+
     title: 'Juara 1 Lomba Cerdas Cermat Pancasila dan UUD NRI 1945',
     image: 'https://images.unsplash.com/photo-1529070538774-1843cb3265df?w=1200&q=80',
     date: '31 Oct, 2025',

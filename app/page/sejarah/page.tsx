@@ -75,7 +75,8 @@ export default function SejarahPage() {
 
               <h3 className="text-2xl font-bold text-primary mb-4 mt-8 font-heading">Menuju Masa Depan</h3>
               <p>
-                Kini, di bawah kepemimpinan <strong>Bapak Ahmad Rifa'i</strong>, MTSS Sunan Drajat terus melakukan inovasi digital dan penguatan kurikulum. Akreditasi B yang diraih pada tahun 2015 menjadi bukti nyata bahwa standar pendidikan kami telah memenuhi kriteria nasional.
+                Kini, di bawah kepemimpinan <strong>Bapak Ahmad Rifa&apos;i</strong>, MTSS Sunan Drajat terus melakukan inovasi digital dan penguatan kurikulum. Akreditasi B yang diraih pada tahun 2015 menjadi bukti nyata bahwa standar pendidikan kami telah memenuhi kriteria nasional.
+
               </p>
               <p>
                 Kami terus berkomitmen menjaga nilai-nilai <strong>Ahlussunnah wal Jamaah</strong> sebagai pondasi utama bagi setiap siswa dalam menghadapi tantangan global di masa depan.

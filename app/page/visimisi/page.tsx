@@ -120,7 +120,8 @@ export default function VisiMisiPage() {
           <div className="mt-8 bg-gradient-to-r from-primary to-primary-dark rounded-lg shadow-xl p-12 text-center text-white">
             <i className="fas fa-quote-left text-4xl mb-4 opacity-50"></i>
             <h3 className="text-3xl md:text-4xl font-bold mb-4">Unggul, Islami, Berkarakter</h3>
-            <p className="text-xl opacity-90">Mewujudkan Generasi Qur'ani</p>
+            <p className="text-xl opacity-90">Mewujudkan Generasi Qur&apos;ani</p>
+
             <i className="fas fa-quote-right text-4xl mt-4 opacity-50"></i>
           </div>
         </div>

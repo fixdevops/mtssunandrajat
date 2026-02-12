@@ -80,7 +80,7 @@ export default function ProfilPage() {
   );
 }
 
-function IdentityItem({ label, value }) {
+function IdentityItem({ label, value }: { label: string; value: string }) {
   return (
     <div className="flex flex-col sm:flex-row border-b border-gray-50 py-2 gap-1 sm:gap-4">
       <span className="w-full sm:w-1/3 text-gray-500 text-sm">{label}</span>

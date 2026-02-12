@@ -45,7 +45,8 @@ export default function SambutanPage() {
                   
                   <p className="italic text-gray-500 mb-6">
                     Bismillahirrohmanirrahim.<br/>
-                    Assalamu'alaikum Warahmatullahi Wabarakatuh.
+                    Assalamu&apos;alaikum Warahmatullahi Wabarakatuh.
+
                   </p>
                   
                   <p className="mb-4">
@@ -73,7 +74,8 @@ export default function SambutanPage() {
                   </p>
 
                   <p className="italic text-gray-500 font-medium">
-                    Wassalamu'alaikum Warahmatullahi Wabarakatuh.
+                    Wassalamu&apos;alaikum Warahmatullahi Wabarakatuh.
+
                   </p>
                   
                   <div className="mt-10 p-6 bg-primary/5 rounded-xl border-l-4 border-primary">
