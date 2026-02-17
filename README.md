@@ -1,6 +1,6 @@
-# SMA Negeri 1 Yogyakarta Website
+# MTs Sunan Drajat Website
 
-Website resmi SMA Negeri 1 Yogyakarta - Teladan Jayamahe
+Website Mts Sunan Drajat  - Teladan Jayamahe
 
 ## Tech Stack
 
